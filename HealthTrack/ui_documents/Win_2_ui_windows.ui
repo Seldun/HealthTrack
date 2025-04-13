@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window1</class>
+ <widget class="QDialog" name="Window1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/whole_background.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>64</y>
+     <width>960</width>
+     <height>572</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 80px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>120</y>
+      <width>296</width>
+      <height>296</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/cross__o.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>64</y>
+      <width>71</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 42, 5);</string>
+    </property>
+    <property name="text">
+     <string>Рост</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>192</y>
+      <width>260</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Национальность</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nationality">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>238</y>
+      <width>482</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman [Mono]</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 30px;
+color: rgb(0, 42, 5);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="page2to1_btm">
+    <property name="geometry">
+     <rect>
+      <x>523</x>
+      <y>434</y>
+      <width>183</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(76, 162, 87);
+border-radius: 40px;
+color: rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+	background-color: rgb(71, 146, 80);
+}
+
+QPushButton:pressed{
+background-color: rgb(2, 151, 89);
+border: 2px solid rgb(255,215,0);
+color: rgb(248, 248, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="page2to3_btm">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>434</y>
+      <width>183</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(76, 162, 87);
+border-radius: 40px;
+color: rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+	background-color: rgb(71, 146, 80);
+}
+
+QPushButton:pressed{
+background-color: rgb(2, 151, 89);
+border: 2px solid rgb(255,215,0);
+color: rgb(248, 248, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Далее</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>64</x>
+      <y>323</y>
+      <width>300</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Место проживания</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="residence">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>366</y>
+      <width>482</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman [Mono]</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 30px;
+color: rgb(0, 42, 5);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>64</y>
+      <width>58</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 42, 5);</string>
+    </property>
+    <property name="text">
+     <string>Вес</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="height">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>112</y>
+      <width>237</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman [Mono]</family>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 26px;
+color: rgb(0, 42, 5);
+size: 40px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>100</number>
+    </property>
+    <property name="maximum">
+     <number>250</number>
+    </property>
+    <property name="value">
+     <number>160</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="weight">
+    <property name="geometry">
+     <rect>
+      <x>277</x>
+      <y>112</y>
+      <width>237</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman [Mono]</family>
+      <pointsize>32</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 26px;
+color: rgb(0, 42, 5);
+size: 40px;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimum">
+     <number>45</number>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="value">
+     <number>60</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="responsibillity">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>640</y>
+     <width>845</width>
+     <height>68</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(102, 102, 102);</string>
+   </property>
+   <property name="text">
+    <string>Авторы приложения не несут ответсвенности за Ваше здоровье. 
+Обязательно проконсультируйтесь с врачом.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="status_bar">
+   <property name="geometry">
+    <rect>
+     <x>238</x>
+     <y>42</y>
+     <width>803</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/bar2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

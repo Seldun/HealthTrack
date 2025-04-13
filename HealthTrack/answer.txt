@@ -1,0 +1,7 @@
+ Персональный медицинский отчет для :
+ Возраст: 17 лет | ИМТ: 23.4
+
+ AI-рекомендации:
+Ошибка API: 402 - {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+
+ Важно: Данные рекомендации не заменяют консультацию врача!

@@ -1,0 +1,18 @@
+{
+    "window1": {
+        "name": "",
+        "gender": "male",
+        "birthday": "2008-01-01"
+    },
+    "window2": {
+        "height": 160,
+        "weight": 60,
+        "nationality": "",
+        "residence": ""
+    },
+    "window3": {
+        "symptoms": "",
+        "throat": "",
+        "stomach": ""
+    }
+}

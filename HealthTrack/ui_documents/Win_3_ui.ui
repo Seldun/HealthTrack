@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window1</class>
+ <widget class="QDialog" name="Window1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../Изображения/whole_background.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>64</y>
+     <width>960</width>
+     <height>572</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 80px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>120</y>
+      <width>296</width>
+      <height>296</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Изображения/cross_:o.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="page3to2_btm">
+    <property name="geometry">
+     <rect>
+      <x>523</x>
+      <y>434</y>
+      <width>183</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(76, 162, 87);
+border-radius: 40px;
+color: rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+	background-color: rgb(71, 146, 80);
+}
+
+QPushButton:pressed{
+background-color: rgb(2, 151, 89);
+border: 2px solid rgb(255,215,0);
+color: rgb(248, 248, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Назад</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="answer_btm">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>434</y>
+      <width>183</width>
+      <height>83</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(76, 162, 87);
+border-radius: 40px;
+color: rgb(255, 255, 255);
+
+}
+
+QPushButton:hover{
+	background-color: rgb(71, 146, 80);
+}
+
+QPushButton:pressed{
+background-color: rgb(2, 151, 89);
+border: 2px solid rgb(255,215,0);
+color: rgb(248, 248, 242);
+}</string>
+    </property>
+    <property name="text">
+     <string>Загрузить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>154</x>
+      <y>27</y>
+      <width>198</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman [Mono]</family>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 42, 5);</string>
+    </property>
+    <property name="text">
+     <string>Симптомы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stomach">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>320</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 24px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 58, 34, 80);
+}
+
+QPushButton:pressed{
+
+border: 5px solid rgb(255,215,0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/stomach.png</normaloff>../../../../Изображения/stomach.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="symptoms">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>93</y>
+      <width>210</width>
+      <height>437</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 30px;
+color: rgb(0, 42, 5);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="throat">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>93</y>
+      <width>210</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 0);
+border: 5px solid rgb(0,39,3);
+border-radius: 24px;
+}
+
+QPushButton:hover{
+	background-color: rgba(38, 58, 34, 80);
+}
+
+QPushButton:pressed{
+
+border: 5px solid rgb(255,215,0);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Изображения/throat.png</normaloff>../../../../Изображения/throat.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="responsibillity">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>640</y>
+     <width>728</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>17</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(102, 102, 102);</string>
+   </property>
+   <property name="text">
+    <string>Авторы приложения не несут ответсвенности за Ваше здоровье. 
+Обязательно проконсультируйтесь с врачом.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="status_bar">
+   <property name="geometry">
+    <rect>
+     <x>238</x>
+     <y>42</y>
+     <width>803</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../../Документы/bar3.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
