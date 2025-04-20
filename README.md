@@ -23,5 +23,5 @@ cd health-advisor-ai
 - ОС: Windows 7+/Linux/macOS 12+
 - Установленные пакеты: `PyQt5`, `requests`
 
-## Старт
+## 🏁 Старт
 - запустить `main.py` `(./HealthTrack/main.py)`
