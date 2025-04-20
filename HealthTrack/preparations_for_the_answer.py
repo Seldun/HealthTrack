@@ -7,7 +7,7 @@ class HealthAdvisorAI:
     def __init__(self, user_data):
         self.user_data = user_data
         self.advice = []
-        self.api_url = "https://api-inference.huggingface.co/models/deepseek-ai/deepseek-llm-7b"
+        self.api_url = "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1"
         self.headers = {"Authorization": "Bearer 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"}
 
     def _generate_prompt(self):
