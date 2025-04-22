@@ -240,7 +240,7 @@ class Ui_Window3(object):
             # Выбираем stomach
             self.stomach.setStyleSheet("QPushButton{\n"
                                        "background-color: rgba(255, 255, 255, 0);\n"
-                                       "border: 3px solid rgb(255,215,0);\n"
+                                       "border: 5px solid rgb(255,215,0);\n"
                                        "border-radius: 15px;\n"
                                        "}\n"
                                        "\n"
@@ -249,14 +249,14 @@ class Ui_Window3(object):
                                        "}\n"
                                        "\n"
                                        "QPushButton:pressed{\n"
-                                       "border: 3px solid rgb(255,215,0);\n"
+                                       "border: 5px solid rgb(255,215,0);\n"
                                        "}")
             self.stomach_selected = True
         else:
             # Отменяем выбор
             self.stomach.setStyleSheet("QPushButton{\n"
                                        "background-color: rgba(255, 255, 255, 0);\n"
-                                       "border: 3px solid rgb(0,39,3);\n"
+                                       "border: 5px solid rgb(0,39,3);\n"
                                        "border-radius: 15px;\n"
                                        "}\n"
                                        "\n"
@@ -265,7 +265,7 @@ class Ui_Window3(object):
                                        "}\n"
                                        "\n"
                                        "QPushButton:pressed{\n"
-                                       "border: 3px solid rgb(255,215,0);\n"
+                                       "border: 5px solid rgb(255,215,0);\n"
                                        "}")
             self.stomach_selected = False
 
@@ -274,7 +274,7 @@ class Ui_Window3(object):
             # Выбираем throat
             self.throat.setStyleSheet("QPushButton{\n"
                                       "background-color: rgba(255, 255, 255, 0);\n"
-                                      "border: 3px solid rgb(255,215,0);\n"
+                                      "border: 5px solid rgb(255,215,0);\n"
                                       "border-radius: 15px;\n"
                                       "}\n"
                                       "\n"
@@ -283,14 +283,14 @@ class Ui_Window3(object):
                                       "}\n"
                                       "\n"
                                       "QPushButton:pressed{\n"
-                                      "border: 3px solid rgb(255,215,0);\n"
+                                      "border: 5px solid rgb(255,215,0);\n"
                                       "}")
             self.throat_selected = True
         else:
             # Отменяем выбор
             self.throat.setStyleSheet("QPushButton{\n"
                                       "background-color: rgba(255, 255, 255, 0);\n"
-                                      "border: 3px solid rgb(0,39,3);\n"
+                                      "border: 5px solid rgb(0,39,3);\n"
                                       "border-radius: 15px;\n"
                                       "}\n"
                                       "\n"
@@ -299,6 +299,6 @@ class Ui_Window3(object):
                                       "}\n"
                                       "\n"
                                       "QPushButton:pressed{\n"
-                                      "border: 3px solid rgb(255,215,0);\n"
+                                      "border: 5px solid rgb(255,215,0);\n"
                                       "}")
             self.throat_selected = False
