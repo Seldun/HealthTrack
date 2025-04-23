@@ -28,9 +28,9 @@ else:  # для Linux и MacOS
     from Window2 import Ui_Window2
     from Window3 import Ui_Window3
     from answerWind import Ui_AnswerWindow
-    from Secret import Ui_Password_wind
-    from Cat import Ui_Cat_wind
 
+from Secret import Ui_Password_wind
+from Cat import Ui_Cat_wind
 from Warning import Ui_Dialog
 from curcle import CircularProgress
 from preparations_for_the_answer import HealthAdvisorAI
