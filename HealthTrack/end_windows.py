@@ -84,6 +84,14 @@ class Ui_AnswerWindow(object):
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
 
+        self.mishka = QtWidgets.QPushButton(self.frame)
+        self.mishka.setGeometry(QtCore.QRect(675, 230, 74, 74))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.mishka.setFont(font)
+        self.mishka.setStyleSheet("background-color: rgba(42, 42, 42, 0);")
+        self.mishka.setObjectName("mishka")
+
         self.load_answer_text()
 
         self.retranslateUi(AnswerWindow)
@@ -102,6 +110,7 @@ class Ui_AnswerWindow(object):
         _translate = QtCore.QCoreApplication.translate
         AnswerWindow.setWindowTitle(_translate("AnswerWindow", "HealthTrack"))
         self.label_3.setText(_translate("AnswerWindow", "Ответ нейросети:"))
+        self.mishka.setText(_translate("AnswerWindow", ""))
         self.label_2.setText(_translate("AnswerWindow", "Авторы приложения не несут ответсвенности за Ваше здоровье. \n"
 "Обязательно проконсультируйтесь с врачом."))
 
