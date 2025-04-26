@@ -8,7 +8,7 @@ class HealthAdvisorAI:
         self.user_data = user_data
         self.advice = []
         self.api_url = "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1"
-        self.headers = {"Authorization": "Bearer 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"}
+        self.headers = {"Authorization": "Bearer your_key"}
 
     def _generate_prompt(self):
         age = self.calculate_age()
