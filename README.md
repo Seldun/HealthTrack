@@ -25,3 +25,9 @@ cd health-advisor-ai
 
 ## 🏁 Старт
 - запустить `main.py` `(./HealthTrack/main.py)`
+
+## 💻 Авторы
+- https://github.com/mishka73646
+- https://github.com/Seldun
+- АФ
+- АЛ
