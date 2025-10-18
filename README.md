@@ -13,8 +13,8 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/ваш-username/health-advisor-ai.git
-cd health-advisor-ai
+git clone https://github.com/Seldun/HealthTrack.git
+cd .\HealthTrack\
 ```
 
 
@@ -34,3 +34,4 @@ cd health-advisor-ai
 
 ## 📄 Лицензия
 Данный проект распространяется по лицензии [MIT](LICENSE).
+
