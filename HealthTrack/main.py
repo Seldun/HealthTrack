@@ -12,7 +12,7 @@ import json
 import sys
 import threading
 import platform
-from PyQt5 import QtWidgets, QtCore
+from PyQt5 import QtWidgets, QtCore, QtGui
 import os
 
 
@@ -254,6 +254,9 @@ class MainController:
 
 
 if __name__ == '__main__':
+    QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
+    QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
+
     app = QtWidgets.QApplication(sys.argv)
     window = LoadingWindow()
     window.show()

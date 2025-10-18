@@ -1,4 +1,6 @@
 import json
+import os
+
 from datetime import datetime
 import requests
 
@@ -29,7 +31,7 @@ class HealthAdvisorAI:
         2. Рекомендуемые безрецептурные лекарства
         3. Упражнения/процедуры
         4. Рекомендации по образу жизни
-        Ответ оформляй маркированным списком на русском языке и пояснение в скобках на латыне только для названия болезни. Сам ответ и рекомедачии должны быть строго на русском языке  [/INST]
+        Ответ оформляй маркированным списком на русском языке и пояснение в скобках на латыне только для названия болезни. Сам ответ и рекомендации должны быть строго на русском языке  [/INST]
         """
 
     def query_ai(self, max_tokens=600):
@@ -87,9 +89,12 @@ class HealthAdvisorAI:
 
         # Важные предупреждения
         self.advice.append("\n Важно: Данные рекомендации не заменяют консультацию врача!")
-        with open("answer.txt", "w", encoding="utf-8") as s:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        answer_path = os.path.join(base_dir, "answer.txt")
+        with open(answer_path, "w", encoding="utf-8") as s:
             s.write("\n".join(self.advice))
             print("health track")
+
         return "\n".join(self.advice)
 
 
@@ -114,7 +119,7 @@ if __name__ == "__main__":
             "temperature": "temperature_issue"
         }
     }
-
+    print(1232)
     # Создаем экземпляр советника
     advisor = HealthAdvisorAI(input_data)
 

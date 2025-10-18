@@ -97,38 +97,42 @@ class Ui_AnswerWindow(object):
         self.retranslateUi(AnswerWindow)
         QtCore.QMetaObject.connectSlotsByName(AnswerWindow)
         
-def load_answer_text():
+def load_answer_text(self):
         try:
             # Получаем абсолютный путь к директории текущего скрипта
-            script_dir = os.path.dirname(os.path.abspath(file))
+            script_dir = os.path.dirname(os.path.abspath(__file__))
             # Формируем абсолютный путь к файлу answer.txt
             answer_path = os.path.join(script_dir, "answer.txt")
             
             if not os.path.exists(answer_path):
-                raise FileNotFoundError(f"Файл answer.txt не найден по пути: {answer_path}")
+                # raise FileNotFoundError(f"Файл answer.txt не найден по пути: {answer_path}")
+                self.place_for_answer.setText("Файл answer.txt не найден.")
+                return
             
             with open(answer_path, 'r', encoding='utf-8') as file:
-                return file.read()
+                # return file.read()
+                text = file.read()
+                self.place_for_answer.setText(text)
                 
         except Exception as e:
             error_msg = f"Ошибка при загрузке файла ответа: {str(e)}"
             print(error_msg)  # Для отладки
             return error_msg
 
-    def retranslateUi(self, AnswerWindow):
-        _translate = QtCore.QCoreApplication.translate
-        AnswerWindow.setWindowTitle(_translate("AnswerWindow", "HealthTrack"))
-        self.label_3.setText(_translate("AnswerWindow", "Ответ нейросети:"))
-        self.mishka.setText(_translate("AnswerWindow", ""))
-        self.label_2.setText(_translate("AnswerWindow", "Авторы приложения не несут ответсвенности за Ваше здоровье. \n"
+def retranslateUi(self, AnswerWindow):
+    _translate = QtCore.QCoreApplication.translate
+    AnswerWindow.setWindowTitle(_translate("AnswerWindow", "HealthTrack"))
+    self.label_3.setText(_translate("AnswerWindow", "Ответ нейросети:"))
+    self.mishka.setText(_translate("AnswerWindow", ""))
+    self.label_2.setText(_translate("AnswerWindow", "Авторы приложения не несут ответсвенности за Ваше здоровье. \n"
 "Обязательно проконсультируйтесь с врачом."))
 
-    def center(self, window):
-        # Получаем геометрию основного экрана
-        screen = QtWidgets.QDesktopWidget().screenGeometry()
-        # Получаем геометрию окна
-        window_geometry = window.frameGeometry()
-        # Центрируем окно
-        window_geometry.moveCenter(screen.center())
-        # Перемещаем окно в центр экрана
-        window.move(window_geometry.topLeft())
+def center(self, window):
+    # Получаем геометрию основного экрана
+    screen = QtWidgets.QDesktopWidget().screenGeometry()
+    # Получаем геометрию окна
+    window_geometry = window.frameGeometry()
+    # Центрируем окно
+    window_geometry.moveCenter(screen.center())
+    # Перемещаем окно в центр экрана
+    window.move(window_geometry.topLeft())
