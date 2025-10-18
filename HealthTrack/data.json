@@ -1,18 +1,18 @@
 {
     "window1": {
-        "name": "zxcvbn",
-        "gender": "male",
+        "name": "",
+        "gender": "",
         "birthday": "2008-01-01"
     },
     "window2": {
         "height": 160,
         "weight": 60,
-        "nationality": "j",
-        "residence": "lm"
+        "nationality": "",
+        "residence": ""
     },
     "window3": {
-        "symptoms": "лтдьд",
+        "symptoms": "",
         "throat": "",
-        "stomach": "stomach_issue"
+        "stomach": ""
     }
 }
